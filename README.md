@@ -24,7 +24,7 @@ An example dataset for a composite with one continuous and one binary component 
 The underlying model assumed for analysis is the same for each of the endpoints considered, however it is employed in different ways. The left side bar on the landing page allows the user to choose the relevant endpoint from co-primary, multiple primary and composite endpoints as shown. 
 
 <p align="center">
-<img src="/Images/SampleSizeHome.png" title="SampleSizeHome" width="80%" />
+<img src="/Images/SampleSizeHome.png" title="SampleSizeHome" width="100%" />
 </p>
 
 ### Co-Primary and Multiple Primary Endpoints
