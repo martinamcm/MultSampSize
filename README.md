@@ -15,11 +15,15 @@ The tutorial below provides step-by-step guidance for using the MultSampSize Shi
 
 ## Getting started
 
-To access the AugBin GUI, go to https://martinamcm.shinyapps.io/multsampsize/. 
+To access the MultSampSize GUI, go to https://martinamcm.shinyapps.io/multsampsize/. 
 
 An example dataset for a composite with one continuous and one binary component is available in the repository.
 
 ## Tutorial
+
+The underlying model assumed for analysis is the same for each of the endpoints considered, however it is employed in different ways. The left side bar on the landing page allows the user to choose the relevant endpoint from co-primary, multiple primary and composite endpoints as shown. 
+
+\includegrap
 
 ### Co-Primary and Multiple Primary Endpoints
 
