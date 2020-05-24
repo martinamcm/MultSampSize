@@ -27,7 +27,7 @@ The underlying model assumed for analysis is the same for each of the endpoints 
 <img src="/Images/SampleSizeHome.png" title="SampleSizeHome" width="100%" />
 </p>
 
-### Co-Primary and Multiple Primary Endpoints
+#### Co-Primary and Multiple Primary Endpoints
 
 
 
