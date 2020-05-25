@@ -29,9 +29,21 @@ The underlying model assumed for analysis is the same for each of the endpoints 
 
 #### Co-Primary and Multiple Primary Endpoints
 
-The user should begin by choosing the number of continuous and binary outcomes that make up the endpoint. This can be one or two continuous and zero or one binary. Clicking the 'Generate Model' button shows a summary of the latent variable model used and the power function calculated. This is shown below for the case when the endpoint is made up of two continuous and one binary outcome.
+The co-primary case will be demonstrated through an example, however the functionality also applies to the multiple outcome scenario. The user should begin by choosing the number of continuous and binary outcomes that make up the endpoint, which can be one or two continuous and zero or one binary measures. Clicking the 'Generate Model' button shows a summary of the latent variable model used and the power function calculated. This is shown below for the case when the co-primary endpoint is made up of two continuous and one binary outcome.
 
 <p align="center">
 <img src="/Images/ModelSamp.png" title="ModelSamp" width="100%" />
+</p>
+
+Note that the model employed is the same for the co-primary and multiple primary endpoints however the power function differs.
+
+<p align="center">
+<img src="/Images/ModelSampMult.png" title="ModelSampMult" width="100%" />
+</p>
+
+When the structure of the endpoint has been selected the user can input parameter values where $\delta_{k}$ is the risk difference and $\sigma_{k}$ is the standard deviation in outcome $k$ and $\rho_{kl}$ is the correlation between outcome $k$ and $l$. 
+
+<p align="center">
+<img src="/Images/ModelParams.png" title="ModelParams" width="100%" />
 </p>
 
