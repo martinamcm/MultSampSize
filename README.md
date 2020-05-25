@@ -41,9 +41,18 @@ Note that the model employed is the same for the co-primary and multiple primary
 <img src="/Images/ModelSampMult.png" title="ModelSampMult" width="100%" />
 </p>
 
-When the structure of the endpoint has been selected the user can input parameter values where &delta; is the risk difference and \sigma_{k} is the standard deviation in outcome k and \rho_{kl} is the correlation between outcome k and l. 
+When the structure of the endpoint has been selected the user can input parameter values where &delta;<sub>k</sub> is the risk difference and &sigma;<sub>k</sub> is the standard deviation in outcome k and &rho;<sub>kl</sub>} is the correlation between outcome k and l. 
 
 <p align="center">
 <img src="/Images/ModelParams.png" title="ModelParams" width="100%" />
 </p>
+
+The alpha level, desired power and maximum number of subjects can be adjusted in the 'Sample Size Estimation' panel as shown below. The resulting power curve is displayed and is updated when these or the model parameters are adjusted. The number of subjects required per arm is stated below the plot, as shown. 
+
+<p align="center">
+<img src="/Images/SampleSize.png" title="SampleSize" width="100%" />
+</p>
+
+
+### Composite Endpoints
 
