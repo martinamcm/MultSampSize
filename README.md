@@ -29,5 +29,9 @@ The underlying model assumed for analysis is the same for each of the endpoints 
 
 #### Co-Primary and Multiple Primary Endpoints
 
+The user should begin by choosing the number of continuous and binary outcomes that make up the endpoint. This can be one or two continuous and zero or one binary. Clicking the 'Generate Model' button shows a summary of the latent variable model used and the power function calculated. This is shown below for the case when the endpoint is made up of two continuous and one binary outcome.
 
+<p align="center">
+<img src="/Images/ModelSamp.png" title="ModelSamp" width="100%" />
+</p>
 
