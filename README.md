@@ -41,7 +41,7 @@ Note that the model employed is the same for the co-primary and multiple primary
 <img src="/Images/ModelSampMult.png" title="ModelSampMult" width="100%" />
 </p>
 
-When the structure of the endpoint has been selected the user can input parameter values where $\delta_{k}$ is the risk difference and $\sigma_{k}$ is the standard deviation in outcome $k$ and $\rho_{kl}$ is the correlation between outcome $k$ and $l$. 
+When the structure of the endpoint has been selected the user can input parameter values where \delta_{k} is the risk difference and \sigma_{k} is the standard deviation in outcome k and \rho_{kl} is the correlation between outcome k and l. 
 
 <p align="center">
 <img src="/Images/ModelParams.png" title="ModelParams" width="100%" />
