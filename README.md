@@ -59,19 +59,19 @@ The alpha level, desired power and maximum number of subjects can be adjusted in
 For composite responder endpoints, the user must select the number of continuous and binary components along with the dichotomisation threshold for each of the continuous measures. 
 
 <p align="center">
-<img src="/Images/Comp1.png" title="Comp1" width="100%" />
+<img src="/Images/Comp1.png" title="Comp1" width="40%" />
 </p>
 
 After selecting 'Get Model' a model summary, treatment effect definition and the power function will be displayed in the 'Model Summary' panel.
 
 <p align="center">
-<img src="/Images/Comp2.png" title="Comp2" width="100%" />
+<img src="/Images/Comp2.png" title="Comp2" width="90%" />
 </p>
 
 The user must upload pilot data and click 'Obtain estimates' to provide parameter estimates using the panel as shown. A loading bar will be shown when the model is being fitted and a table with parameter estimates from both the latent approach and standard binary approach will be displayed when it is complete. 
 
 <p align="center">
-<img src="/Images/Comp3.png" title="Comp3" width="40%" /><img src="/Images/Comp4.png" title="Comp4" width="40%" />
+<img src="/Images/Comp3.png" title="Comp3" width="60%" /><img src="/Images/Comp4.png" title="Comp4" width="50%" />
 </p>
 
 The uploaded data must have columns ordered as follows:
