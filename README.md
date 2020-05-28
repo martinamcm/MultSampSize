@@ -71,7 +71,7 @@ After selecting 'Get Model' a model summary, treatment effect definition and the
 The user must upload pilot data and click 'Obtain estimates' to provide parameter estimates using the panel as shown. A loading bar will be shown when the model is being fitted and a table with parameter estimates from both the latent approach and standard binary approach will be displayed when it is complete. 
 
 <p align="center">
-<img src="/Images/Comp3.png" title="Comp3" width="60%" /><img src="/Images/Comp4.png" title="Comp4" width="50%" />
+<img src="/Images/Comp3.png" title="Comp3" width="80%" /><img src="/Images/Comp4.png" title="Comp4" width="80%" />
 </p>
 
 The uploaded data must have columns ordered as follows:
