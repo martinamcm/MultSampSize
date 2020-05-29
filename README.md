@@ -32,25 +32,25 @@ The underlying model assumed for analysis is the same for each of the endpoints 
 The co-primary case will be demonstrated through an example, however the functionality also applies to the multiple outcome scenario. The user should begin by choosing the number of continuous and binary outcomes that make up the endpoint, which can be one or two continuous and zero or one binary measures. Clicking the 'Generate Model' button shows a summary of the latent variable model used and the power function calculated. This is shown below for the case when the co-primary endpoint is made up of two continuous and one binary outcome.
 
 <p align="center">
-<img src="/Images/ModelSamp.png" title="ModelSamp" width="100%" />
+<img src="/Images/CoPrim1.png" title="CoPrim1" width="100%" />
 </p>
 
 Note that the model employed is the same for the co-primary and multiple primary endpoints however the power function differs.
 
 <p align="center">
-<img src="/Images/ModelSampMult.png" title="ModelSampMult" width="100%" />
+<img src="/Images/MultPrim1.png" title="MultPrim1" width="100%" />
 </p>
 
-When the structure of the endpoint has been selected the user can input parameter values where &delta;<sub>k</sub> is the risk difference and &sigma;<sub>k</sub> is the standard deviation in outcome k and &rho;<sub>kl</sub>} is the correlation between outcome k and l. 
+When the structure of the endpoint has been selected the user can input parameter values where &delta;<sub>k</sub> is the risk difference, &pi;<sub>Tk</sub> and &pi;<sub>Ck</sub> is the probability that observed binary outcome Y<sub>ik</sub> is equal to  1 for patient i, &sigma;<sub>k</sub> is the standard deviation in outcome k and &rho;<sub>kl</sub>} is the correlation between outcome k and l. 
 
 <p align="center">
-<img src="/Images/ModelParams.png" title="ModelParams" width="100%" />
+<img src="/Images/CoPrim2.png" title="CoPrim2" width="100%" />
 </p>
 
 The alpha level, desired power and maximum number of subjects can be adjusted in the 'Sample Size Estimation' panel as shown below. The resulting power curve is displayed and is updated when these or the model parameters are adjusted. The number of subjects required per arm is stated below the plot, as shown. 
 
 <p align="center">
-<img src="/Images/SampleSize.png" title="SampleSize" width="100%" />
+<img src="/Images/CoPrim3.png" title="SampleSize" width="100%" />
 </p>
 
 
