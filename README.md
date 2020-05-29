@@ -68,7 +68,7 @@ After selecting 'Get Model' a model summary, treatment effect definition and the
 <img src="/Images/Comp2.png" title="Comp2" width="90%" />
 </p>
 
-The user must upload pilot data and click 'Obtain estimates' to provide parameter estimates using the panel as shown. A loading bar will be shown when the model is being fitted and a table with parameter estimates from both the latent approach and standard binary approach will be displayed when it is complete. 
+The user must upload pilot data and click 'Obtain estimates' to provide parameter estimates using the panel as shown. A loading bar will be shown when the model is being fitted and a table with parameter estimates from both the latent approach and standard binary approach will be displayed when it is complete. An example dataset for the case of two continuous and one binary components is provided in the repository.
 
 <p align="center">
 <img src="/Images/Comp3.png" title="Comp3" width="80%" /><img src="/Images/Comp4.png" title="Comp4" width="80%" />
@@ -84,4 +84,10 @@ The 'Sample Size Estimation' panel shows a plot of the power curve for both the 
 
 <p align="center">
 <img src="/Images/Comp5.png" title="Comp5" width="100%" />
+</p>
+
+Note that the efficiency gains offered by the latent variable method depend on many factors, such as the dichotomisation thresholds, probability of response in each arm and the correlation between components. To illustrate this the power curve for the same data with different response thresholds is shown below. 
+
+<p align="center">
+<img src="/Images/Comp6.png" title="Comp6" width="100%" />
 </p>
