@@ -1,0 +1,59 @@
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+
+
+<div class="fluid-row" id="header">
+
+
+
+
+</div>
+
+
+<p><font size="5"> <strong>MultSampSize:</strong> Sample size estimation for mixed outcome endpoints </font></p>
+<p>Welcome to the GUI for sample size determination using latent variable models for mixed outcome endpoints. The app provides required sample sizes for co-primary, multiple primary and composite endpoints that are comprised of discrete and continuous measures. In the co-primary and multiple primary cases, the parameters can be inputted directly. In the case of composite endpoints, pilot data is used to provide parameter estimates.</p>
+<p>The methods implemented in this app are discussed in (McMenamin et al., 2019).</p>
+<p>A tutorial on how to use the app, along with R code and example data, is available at <a href="https://github.com/martinamcm/MultSampSize" class="uri">https://github.com/martinamcm/MultSampSize</a>.</p>
+<p><font size="4"> <strong>References</strong> </font></p>
+<p>McMenamin M, Barrett JK, Berglind A, Wason JMS. Sample Size Estimation using a Latent Variable Model for Mixed Outcome Co-Primary, Multiple Primary and Composite Endpoints. 2019; <a href="https://arxiv.org/abs/1912.05258" class="uri">https://arxiv.org/abs/1912.05258</a></p>
+<p>McMenamin M, Barrett JK, Berglind A, Wason JMS. Latent variable modelling for complex composite endpoints. 2019; <a href="https://arxiv.org/abs/1902.07037" class="uri">https://arxiv.org/abs/1902.07037</a></p>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script><!-- tabsets --><script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script><!-- code folding --><!-- dynamically load mathjax for compatibility with self-contained --><script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
