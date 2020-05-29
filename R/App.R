@@ -322,7 +322,7 @@ server <- function(input, output) {
   
   output$Analysis <- renderFormattable({
     
-    Parameters <- c(HTML("&mu; <sub>C</sub>"),HTML("&mu;<sub>T</sub>"),HTML("&delta;"),HTML("&sigma;"))
+    Parameters <- c(HTML("&mu; <sub>T</sub>"),HTML("&mu;<sub>C</sub>"),HTML("&delta;"),HTML("&sigma;"))
     LatVar <- c(GenAnalysis()[c(3:4,1:2)])
     Bin <- c(GenAnalysis()[c(7:8,5:6)])
     
