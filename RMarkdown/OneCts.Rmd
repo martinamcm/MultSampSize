@@ -1,0 +1,34 @@
+---
+title: ""
+header-includes:
+   - \usepackage{xfrac}
+output: html_document
+
+---
+<style type="text/css">
+
+body{ /* Normal  */
+      font-size: 12px;
+  }
+  
+title {
+  font-size: 38px;
+  color: DarkRed;
+}
+</style>
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+ <font size="3">  **Univariate Normal Model** </font>
+
+Let $Y_{i1}$ represent the observed continuous outcome for patient $i \in N$, $\mathbf{Y}=(\mathbf{Y_{1}},\ldots \mathbf{Y_{N}})^{T}$ represent the observed outcomes for all patients and $T_{i}$ the treatment indicator for patient i. Let $\mu_{T}$ and $\mu_{C}$ equal the mean in the treatment and control arms respectively and $\delta_{1}=\mu_{T}-\mu_{C}$. We can model the error term as normal with zero mean and variance $\sigma_{1}^{2}$.
+
+<font size="3"> **Power Function** </font>
+
+$$1-\beta = \Phi \left( \frac{\delta}{\sqrt{2\sigma_{1}^{2} / n}} - z_{\sfrac{\alpha}{2}} \right)$$
+
+
+
+
