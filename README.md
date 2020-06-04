@@ -43,7 +43,7 @@ Note that the model employed is the same for the co-primary and multiple primary
 <img src="/Images/MultPrim1.png" title="MultPrim1" width="100%" />
 </p>
 
-After the structure of the endpoint has been selected, the following parameters are user specified: &delta;<sub>k</sub>, the risk difference; &pi;<sub>Tk</sub> and &pi;<sub>Ck</sub>, the probability that observed binary outcome Y<sub>ik</sub> is equal to  1 for patient i; &sigma;<sub>k</sub>, the standard deviation in outcome k; &rho;<sub>kl</sub>} the correlation between outcome k and l. 
+After the structure of the endpoint has been selected, the following parameters are user specified: &delta;<sub>k</sub>, the risk difference; &pi;<sub>Tk</sub> and &pi;<sub>Ck</sub>, the probability that observed binary outcome Y<sub>ik</sub> is equal to  1 for patient i; &sigma;<sub>k</sub>, the standard deviation in outcome k; &rho;<sub>kl</sub>, the correlation between outcome k and l. 
 
 <p align="center">
 <img src="/Images/CoPrim2.png" title="CoPrim2" width="100%" />
