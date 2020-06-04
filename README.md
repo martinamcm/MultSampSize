@@ -17,7 +17,7 @@ The tutorial below provides step-by-step guidance for using the MultSampSize Shi
 
 To access the MultSampSize GUI, go to https://martinamcm.shinyapps.io/multsampsize/. 
 
-An example dataset for a composite with one continuous and one binary component is available in the repository.
+As the composite case requires pilot data to get the covariance components, an example dataset for a composite with one continuous and one binary component is available in the repository.
 
 ## Tutorial
 
@@ -29,7 +29,9 @@ The underlying model assumed for analysis is the same for each of the endpoints 
 
 ### Co-Primary and Multiple Primary Endpoints
 
-The co-primary case will be demonstrated through an example, however the functionality also applies to the multiple outcome scenario. The user should begin by choosing the number of continuous and binary outcomes that make up the endpoint, which can be one or two continuous and zero or one binary measures. Clicking the 'Generate Model' button shows a summary of the latent variable model used and the power function calculated. This is shown below for the case when the co-primary endpoint is made up of two continuous and one binary outcome.
+The functionality for co-primary and multiple primary endpoints is the same. The co-primary case is demonstrated here with an example.
+
+The user should begin by choosing the number of continuous and binary outcomes that make up the endpoint, which can be one or two continuous and zero or one binary measures. Clicking the 'Generate Model' button shows a summary of the latent variable model used and the power function calculated. This is shown below for the case when the co-primary endpoint is made up of two continuous and one binary outcome.
 
 <p align="center">
 <img src="/Images/CoPrim1.png" title="CoPrim1" width="100%" />
@@ -41,7 +43,7 @@ Note that the model employed is the same for the co-primary and multiple primary
 <img src="/Images/MultPrim1.png" title="MultPrim1" width="100%" />
 </p>
 
-When the structure of the endpoint has been selected the user can input parameter values where &delta;<sub>k</sub> is the risk difference, &pi;<sub>Tk</sub> and &pi;<sub>Ck</sub> is the probability that observed binary outcome Y<sub>ik</sub> is equal to  1 for patient i, &sigma;<sub>k</sub> is the standard deviation in outcome k and &rho;<sub>kl</sub>} is the correlation between outcome k and l. 
+After the structure of the endpoint has been selected, the following parameters are user specified: &delta;<sub>k</sub>, the risk difference; &pi;<sub>Tk</sub> and &pi;<sub>Ck</sub>, the probability that observed binary outcome Y<sub>ik</sub> is equal to  1 for patient i; &sigma;<sub>k</sub>, the standard deviation in outcome k; &rho;<sub>kl</sub>} the correlation between outcome k and l. 
 
 <p align="center">
 <img src="/Images/CoPrim2.png" title="CoPrim2" width="100%" />
