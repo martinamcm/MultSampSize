@@ -371,7 +371,7 @@ server <- function(input, output) {
   
   powercalc <- reactive({
      mean <- GenAnalysis()[1]
-     var <- (0.5*dim(DataInf())[1]*GenAnalysis()[2])
+     var <- (ceiling(0.5*dim(DataInf())[1])*GenAnalysis()[2])
      maxn <- input$maxn
      alpha <- switch(input$alpha,
                      "Alpha = 0.01" = 0.01, 
@@ -386,7 +386,7 @@ server <- function(input, output) {
   
   powercalcbin <- reactive({
     mean <- GenAnalysis()[1]
-    var <- (0.5*dim(DataInf())[1]*GenAnalysis()[6])
+    var <- (ceiling(0.5*dim(DataInf())[1])*GenAnalysis()[6])
     maxn <- input$maxn
     alpha <- switch(input$alpha,
                     "Alpha = 0.01" = 0.01, 
