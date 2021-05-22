@@ -18,7 +18,6 @@ library('xml2')
 library('rvest')
 library('rmarkdown')
 library('mvtnorm')
-library('tableschema.r')
 
 #xml2::write_html(rvest::html_node(xml2::read_html("OneCtsOneBinSamp.html"), "body"), file = "OneCtsOneBinSamp.html")
 
@@ -61,21 +60,21 @@ ui <- dashboardPage(
                 
                 box(title="Model Parameter Inputs",width=11,solidHeader = TRUE,status="primary",
                     column(width=3,
-                           numericInput("MeanY1mult", label=HTML("&delta; <sub>1</sub>"),value=1,min=0, max=100),
+                           numericInput("MeanY1mult", label=HTML("&delta; <sub>1</sub>"),value=1,min=-100, max=100),
                            
                            conditionalPanel("input.Ctsnomult==2 && input.Binnomult==0",
-                                            numericInput("MeanY2mult", label=HTML("&delta; <sub>2</sub>"),value=1,min=0, max=100)
+                                            numericInput("MeanY2mult", label=HTML("&delta; <sub>2</sub>"),value=1,min=-100, max=100)
                            ),
                            conditionalPanel("input.Ctsnomult==1 && input.Binnomult==1",
-                                            numericInput("piT2multa", label=HTML("&pi; <sub>T2</sub><sub style='position: relative; left: -.5em;'>2</sub>"),value=0.6,min=0, max=1, step=0.05),
-                                            numericInput("piC2multa", label=HTML("&pi; <sub>C2</sub><sub style='position: relative; left: -.5em;'>2</sub>"),value=0.5,min=0, max=1, step=0.05)
+                                            numericInput("piT2multa", label=HTML("&pi; <sub>T2</sub><sub style='position: relative; left: -.5em;'>2</sub>"),value=0.6,min=0.000001, max=0.999999),
+                                            numericInput("piC2multa", label=HTML("&pi; <sub>C2</sub><sub style='position: relative; left: -.5em;'>2</sub>"),value=0.5,min=0.0000001, max=0.999999)
                                             
                            ),
                            
                            conditionalPanel("input.Ctsnomult==2 && input.Binnomult==1",
-                                            numericInput("MeanY2multb", label=HTML("&delta; <sub>2</sub>"),value=1,min=0, max=100),
-                                            numericInput("piT3mult", label=HTML("&pi; <sub>T3</sub><sub style='position: relative; left: -.5em;'>3</sub>"),value=0.6,min=0, max=1, step=0.05),
-                                            numericInput("piC3mult", label=HTML("&pi; <sub>C3</sub><sub style='position: relative; left: -.5em;'>3</sub>"),value=0.5,min=0, max=1, step=0.05)
+                                            numericInput("MeanY2multb", label=HTML("&delta; <sub>2</sub>"),value=1,min=-100, max=100),
+                                            numericInput("piT3mult", label=HTML("&pi; <sub>T3</sub><sub style='position: relative; left: -.5em;'>3</sub>"),value=0.6,min=0.000001, max=0.999999),
+                                            numericInput("piC3mult", label=HTML("&pi; <sub>C3</sub><sub style='position: relative; left: -.5em;'>3</sub>"),value=0.5,min=0.000001, max=0.999999)
                            )
                            
                     ),
@@ -138,20 +137,20 @@ ui <- dashboardPage(
               
               box(title="Model Parameter Inputs",width=11,solidHeader = TRUE,status="primary",
                   column(width=3,
-                         numericInput("MeanY1", label=HTML("&delta; <sub>1</sub>"),value=1,min=0, max=100),
+                         numericInput("MeanY1", label=HTML("&delta; <sub>1</sub>"),value=1,min=-100, max=100),
                         
                           conditionalPanel("input.Ctsnoco==2 && input.Binnoco==0",
-                                          numericInput("MeanY2", label=HTML("&delta; <sub>2</sub>"),value=1,min=0, max=100)
+                                          numericInput("MeanY2", label=HTML("&delta; <sub>2</sub>"),value=1,min=-100, max=100)
                          ),
                           conditionalPanel("input.Ctsnoco==1 && input.Binnoco==1",
-                                           numericInput("piT2a", label=HTML("&pi;<sub>T2</sub><sub style='position: relative; left: -.5em;'>2</sub>"),value=0.6,min=0, max=1, step=0.05),
-                                           numericInput("piC2a", label=HTML("&pi;<sub>C2</sub><sub style='position: relative; left: -.5em;'>2</sub>"),value=0.5,min=0, max=1, step=0.05)
+                                           numericInput("piT2a", label=HTML("&pi;<sub>T2</sub><sub style='position: relative; left: -.5em;'>2</sub>"),value=0.6,min=0.000001, max=0.999999),
+                                           numericInput("piC2a", label=HTML("&pi;<sub>C2</sub><sub style='position: relative; left: -.5em;'>2</sub>"),value=0.5,min=0.000001, max=0.999999)
                                            ),
                           
                           conditionalPanel("input.Ctsnoco==2 && input.Binnoco==1",
-                                           numericInput("MeanY2b", label=HTML("&delta; <sub>2</sub>"),value=1,min=0, max=100),
-                                           numericInput("piT3", label=HTML("&pi; <sub>T3</sub><sub style='position: relative; left: -.5em;'>3</sub>"),value=0.6,min=0, max=1, step=0.05),
-                                           numericInput("piC3", label=HTML("&pi; <sub>C3</sub><sub style='position: relative; left: -.5em;'>3</sub>"),value=0.5,min=0, max=1, step=0.05)
+                                           numericInput("MeanY2b", label=HTML("&delta; <sub>2</sub>"),value=1,min=-100, max=100),
+                                           numericInput("piT3", label=HTML("&pi; <sub>T3</sub><sub style='position: relative; left: -.5em;'>3</sub>"),value=0.6,min=0.000001, max=0.999999),
+                                           numericInput("piC3", label=HTML("&pi; <sub>C3</sub><sub style='position: relative; left: -.5em;'>3</sub>"),value=0.5,min=0.000001, max=0.999999)
                           )
                           
                   ),
@@ -245,8 +244,7 @@ ui <- dashboardPage(
                 
                 column(width=7,
 
-                   uiOutput("ResultsTable"),
-                   uiOutput("LatEstTable")
+                   uiOutput("ResultsTable")
                     
                    )),
                 
@@ -289,31 +287,11 @@ server <- function(input, output) {
     rawData <- InputData()
   )
 
-  observe({
-    if(input$piC2a>input$piT2a)
-      showModal(modalDialog(
-        title = "Warning",
-        "A positive treatment effect is required in all outcomes for co-primary endpoints",
-        easyClose = TRUE,
-        footer = NULL
-      ))
-  })
-  
-  observe({
-    if(input$piC3>input$piT3)
-      showModal(modalDialog(
-        title = "Warning",
-        "A positive treatment effect is required in all outcomes for co-primary endpoints",
-        easyClose = TRUE,
-        footer = NULL
-      ))
-  })
-  
+
   
   GenAnalysis <- eventReactive(input$GetParams,{
     
     if(input$Ctsno==2 && input$Binno==1){
-      
       source('LatVarEst_21.R', local=TRUE)
       
       Analysis<-LatVarfunc(DataInf(),c(input$dichY1,input$dichY2))
@@ -327,7 +305,6 @@ server <- function(input, output) {
     
     else if(input$Ctsno==1 && input$Binno==1){
       source('LatVarEst_11.R', local=TRUE)
-      
       Analysis<-LatVarfunc(DataInf(),input$dichY1)
     }
     
@@ -337,7 +314,6 @@ server <- function(input, output) {
       Analysis<-LatVarfunc(DataInf(),input$dichY1)
     }
   })
-  
   
   
   output$ResultsTable <- renderUI({
@@ -355,23 +331,11 @@ server <- function(input, output) {
     
   })
   
-  output$LatEstTable <- renderUI({
-    formattableOutput("parameterest")
-  })
-  
-  output$parameterest<- renderFormattable({
-    
-    Parameters <- c(HTML("&delta;<sub>1</sub>"),HTML("&sigma;<sub>1</sub>"))
-    LatVarests <- c(GenAnalysis()[c(9,10)])
-    
-    dataresultstable <- data.frame(Parameters,LatVarests)
-    formattable(dataresultstable,col.names=(c("Parameters","LatVarests")),digits=3)
-  })
   
   
   powercalc <- reactive({
      mean <- GenAnalysis()[1]
-     var <- (ceiling(0.5*dim(DataInf())[1])*GenAnalysis()[2])
+     var <- (0.5*dim(DataInf())[1]*GenAnalysis()[2])
      maxn <- input$maxn
      alpha <- switch(input$alpha,
                      "Alpha = 0.01" = 0.01, 
@@ -386,7 +350,7 @@ server <- function(input, output) {
   
   powercalcbin <- reactive({
     mean <- GenAnalysis()[1]
-    var <- (ceiling(0.5*dim(DataInf())[1])*GenAnalysis()[6])
+    var <- (0.5*dim(DataInf())[1]*GenAnalysis()[6])
     maxn <- input$maxn
     alpha <- switch(input$alpha,
                     "Alpha = 0.01" = 0.01, 
@@ -400,6 +364,7 @@ server <- function(input, output) {
   })
   
 
+  
   coprimpower <- reactive({
     
     maxn <- input$maxncop
@@ -565,7 +530,6 @@ server <- function(input, output) {
   
   
   output$samplesizecomp <- renderInfoBox({
-    
     infoBox(
      "Individuals per arm", nrequired(), icon = icon("users", lib = "font-awesome"),
       color = "light-blue",fill=TRUE
@@ -573,7 +537,6 @@ server <- function(input, output) {
   }) 
   
  nrequired<- reactive({
-   
     Ns <- seq(0,input$maxn,1)
     nrequired <- Ns[which.max(powercalc()>=input$target)]
   
@@ -672,4 +635,6 @@ server <- function(input, output) {
 
 # Run the application 
 shinyApp(ui = ui, server = server)
-
+                               
+                               
+                               
