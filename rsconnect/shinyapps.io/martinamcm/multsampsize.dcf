@@ -5,7 +5,7 @@ account: martinamcm
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 2372339
-bundleId: 4626863
+bundleId: 4631435
 url: https://martinamcm.shinyapps.io/multsampsize/
-when: 1621664437.6058
-lastSyncTime: 1621664437.60586
+when: 1621819611.65418
+lastSyncTime: 1621819611.6542

@@ -19,9 +19,9 @@ library('rvest')
 library('rmarkdown')
 library('mvtnorm')
 
-#xml2::write_html(rvest::html_node(xml2::read_html("OneCtsOneBinSamp.html"), "body"), file = "OneCtsOneBinSamp.html")
 
 source('functions.R',local=TRUE)
+landpagesamp <- file.path("HTML","LandPageSamp.html")
 
 ui <- dashboardPage(
   dashboardHeader(title = "MultSampSize"),
@@ -43,7 +43,7 @@ ui <- dashboardPage(
     tabItems(
       tabItem(tabName = "home",
               fluidRow(
-                includeHTML("LandPageSamp.html")
+                includeHTML(landpagesamp)
               )),
       
       tabItem(tabName = "multprim",
