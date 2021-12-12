@@ -3,15 +3,15 @@
 
 samplesize<-function(mean.lat,mean.bin,var.lat,var.bin,alpha,beta){
   
-  n.lat=(var.lat*(qnorm(1-beta)-(qnorm(alpha)))^2)/(mean.lat)^2
-  n.bin=(var.bin*(qnorm(1-beta)-(qnorm(alpha)))^2)/(mean.bin)^2
+  n.lat=(2*var.lat*(qnorm(1-beta)-(qnorm(alpha)))^2)/(mean.lat)^2
+  n.bin=(2*var.bin*(qnorm(1-beta)-(qnorm(alpha)))^2)/(mean.bin)^2
   
   return(c(n.lat,n.bin))
 }
 
 powerfunc<-function(mean,var,alpha,n){
   
-  power.lat=pnorm((mean/(sqrt(var/n)))-qnorm(1-alpha))
+  power.lat=pnorm((mean/(sqrt(2*var/n)))-qnorm(1-alpha))
   
   return(power.lat)
 }
